@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generatePassword(writePassword);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -24,13 +24,13 @@ function characters() {
   if (userChoice == "!@#$%^&*()?") 
   console.log(userChoice)
 }
-function characters() {
-  var userInput = prompt("Finally, ");
+function upperLower() {
+  var userInput = confirm("Upper and lowercase?"(Boolean));
   var userChoice = userInput
   console.log(userChoice);
-  if (userChoice == "!@#$%^&*()?") 
+  if (userChoice == true) 
   console.log(userChoice)
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword());
